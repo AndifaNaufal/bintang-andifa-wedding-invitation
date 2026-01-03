@@ -108,18 +108,6 @@ export const data = {
             teks: 'Tanggal',
             icon: 'bx bxs-calendar-check',
             path: '#time',
-        },
-        {
-            id: 4,
-            teks: 'Galeri',
-            icon: 'bx bxs-photo-album',
-            path: '#galeri',
-        },
-        {
-            id: 5,
-            teks: 'Ucapan',
-            icon: 'bx bxs-message-rounded-dots',
-            path: '#wishas',
-        },
+        }
     ],
 }
