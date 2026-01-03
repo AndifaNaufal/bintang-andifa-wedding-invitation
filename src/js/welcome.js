@@ -19,17 +19,45 @@ export const welcome = () => {
             </figcaption>`;
     };
 
-    const generateParameterContent = () => {
-        const name = document.querySelector('#name');
-        const params = getQueryParameter('to');
+    // const generateParameterContent = () => {
+    //     const name = document.querySelector('#name');
+    //     const params = getQueryParameter('to');
 
-        if (params) {
-            weddingToElement.innerHTML = `Kepada Yth Bapak/Ibu/Saudara/i<br><span>${params}</span>`;
-            name.value = params;
-        } else {
-            weddingToElement.innerHTML = `Kepada Yth Bapak/Ibu/Saudara/i<br><span>Teman-teman semua</span>`;
-        }
+    //     if (params) {
+    //         weddingToElement.innerHTML = `Kepada Yth Bapak/Ibu/Saudara/i<br><span>${params}</span>`;
+    //         name.value = params;
+    //     } else {
+    //         weddingToElement.innerHTML = `Kepada Yth Bapak/Ibu/Saudara/i<br><span>Teman-teman semua</span>`;
+    //     }
+    // }
+const generateParameterContent = () => {
+  const nameInput = document.querySelector('#name');
+
+  if (!weddingToElement) return; // safety guard
+
+  const params = new URLSearchParams(window.location.search);
+  const guestName = params.get('to');
+
+  if (guestName) {
+    const decodedName = decodeURIComponent(guestName);
+
+    weddingToElement.innerHTML = `
+      Kepada Yth Bapak/Ibu/Saudara/i<br>
+      <span>${decodedName}</span>
+    `;
+
+    if (nameInput) {
+      nameInput.value = decodedName;
     }
+  } else {
+    weddingToElement.innerHTML = `
+      Kepada Yth Bapak/Ibu/Saudara/i<br>
+      <span>Teman-teman semua</span>
+    `;
+  }
+};
+
+
 
     const initialAudio = () => {
         let isPlaying = false;

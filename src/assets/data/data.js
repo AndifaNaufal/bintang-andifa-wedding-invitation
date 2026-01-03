@@ -2,18 +2,18 @@ export const data = {
     bride: {
         L: {
             id: 1,
-            name: 'Lorem Ipsum',
-            child: 'Putra ke lorem',
-            father: 'Lorem',
-            mother: 'Ipsum',
+            name: 'Andifa Naufal Rahman',
+            child: 'Putra pertama',
+            father: 'Faizaluddin',
+            mother: 'Dian Purnama Dewi',
             image: './src/assets/images/cowo.png'
         },
         P: {
             id: 2,
-            name: 'Ipsum Lorem',
-            child: 'Putri ke lorem',
-            father: 'Lorem',
-            mother: 'Ipsum',
+            name: 'Pratiwi Bintang Tri Rezeki',
+            child: 'Putri ketiga',
+            father: 'Sugeng Budi Prasetyo',
+            mother: 'Harwiwis Prabandari',
             image: './src/assets/images/cewe.png'
         },
 
@@ -22,31 +22,31 @@ export const data = {
 
     time: {
         marriage: {
-            year: '2030',
-            month: 'November',
-            date: '14',
-            day: 'Kamis',
+            year: '2026',
+            month: 'Januari',
+            date: '17',
+            day: 'Sabtu',
             hours: {
-                start: '08.00',
+                start: '16:00',
                 finish: 'Selesai'
             }
         },
         reception: {
-            year: '2024',
-            month: 'November',
-            date: '14',
-            day: 'Kamis',
+            year: '2026',
+            month: 'Januari',
+            date: '17',
+            day: 'Sabtu',
             hours: {
-                start: '11.00',
+                start: '18:00',
                 finish: 'Selesai'
             }
         },
-        address: 'Kp. Lorem, RT 000/ RW 000, Desa.Lorem, Kec.Ipsum, Kab.Lorem, Lorem (1234)'
+        address: 'Gedung Sasono Mulyo Depok,Jl. Raya Kalimulya No.30, Jatimulya, Kec. Cilodong, Kota Depok, Jawa Barat 16413'
     },
 
     link: {
-        calendar: 'https://calendar.app.google/oSVLRMYC79GzuA4f9',
-        map: 'https://maps.app.goo.gl/q1Ask2Jgd4ekiiKBA',
+        calendar: 'https://calendar.app.google/RYHYUrUTL5WSCC9G7',
+        map: 'https://maps.app.goo.gl/B5tDpyotbifNftbZ9',
     },
 
     galeri: [
@@ -75,21 +75,20 @@ export const data = {
     bank: [
         {
             id: 1,
-            name: 'Lorem Ipsum',
+            name: 'Pratiwi Bintang Tri Rezeki',
             icon: './src/assets/images/bca.png',
-            rekening: '12345678'
+            rekening: '6375040534'
         },
         {
             id: 2,
-            name: 'Ipsum Lorem',
-            icon: './src/assets/images/bri.png',
-            rekening: '12345678'
+            name: 'Andifa Naufal Rahman',
+            icon: './src/assets/images/permata.png',
+            rekening: '7417136'
         },
     ],
 
     audio: './src/assets/audio/wedding.mp3',
-
-    api: 'https://script.google.com/macros/s/AKfycbyydz6N4p2VWUG8zsXeURv6ap9RP8a4eC3x6N3x6qTDjMVr1cIBz9S0NsHw2rWvBOSXGg/exec',
+    api: 'https://script.google.com/macros/s/AKfycbzhvr0DL386RSn44GkrUml2VwXjuRlBk77eTapcs-28INzhtLbBT43ydqaj8wFFaxzmIw/exec',
 
     navbar: [
         {
